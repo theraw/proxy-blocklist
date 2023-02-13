@@ -85,6 +85,7 @@ urls=(
 #
 )
 for url in "${urls[@]}"; do
+  rm -Rf fulllist.txt
   clear
   curl -s "$url" | grep -E '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | awk -F: '{print $1}' >> fulllist.txt
 done
