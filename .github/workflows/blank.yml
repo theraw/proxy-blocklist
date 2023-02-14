@@ -39,5 +39,5 @@ jobs:
           git config user.name BobTheBuilder
           git config user.email raw@dopehosting.net
           git add .
-          git commit -m "Fresh: `date`"
+          git commit -m "updated"
           git push https://theraw:${{ secrets.G_TOKEN }}@github.com/theraw/proxy-blocklist.git --all
