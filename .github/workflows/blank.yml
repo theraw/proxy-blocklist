@@ -9,19 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Run a one-line script
-        run: ls -la
-      - name: Run a multi-line script
-        run: |
-          pwd
-          whoami
       - run: |
           git clone https://github.com/theraw/proxy-blocklist.git
-          cd proxy-blocklist/
-          date > generated.txt
+          cd proxy-blocklist/grabber
+          bash grab.sh
+          bash build.sh
           git config user.name BobTheBuilder
           git config user.email raw@dopehosting.net
           git add .
-          git commit -m "ip list refresh"
+          git commit -m "Fresh: `date`"
           git push https://theraw:${{ secrets.G_TOKEN }}@github.com/theraw/proxy-blocklist.git --all
