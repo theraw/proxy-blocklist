@@ -24,4 +24,4 @@ jobs:
           git config user.email raw@dopehosting.net
           git add .
           git commit -m "ip list refresh"
-          git push https://${{ secrets.G_USER }}:${{ secrets.G_PASSWORD }}@github.com/${{ github.repository }} --all
+          git push https://${{ secrets.G_USER }}:${{ secrets.G_PASSWORD }}@github.com/theraw/proxy-blocklist.git --all
