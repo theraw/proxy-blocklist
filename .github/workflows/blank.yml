@@ -17,6 +17,8 @@ jobs:
           pwd
           whoami
       - run: |
+          git clone https://github.com/theraw/proxy-blocklist.git
+          cd proxy-blocklist/
           date > generated.txt
           git config user.name BobTheBuilder
           git config user.email raw@dopehosting.net
