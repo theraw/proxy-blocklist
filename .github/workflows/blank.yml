@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          repo-token: ${{ secrets.G_PASSWORD }}
       - name: Run a one-line script
         run: ls -la
       - name: Run a multi-line script
@@ -24,4 +22,4 @@ jobs:
           git config user.email raw@dopehosting.net
           git add .
           git commit -m "ip list refresh"
-          git push https://theraw:${{ secrets.G_PASSWORD }}@github.com/theraw/proxy-blocklist.git --all
+          git push https://theraw:${{ secrets.G_TOKEN }}@github.com/theraw/proxy-blocklist.git --all
