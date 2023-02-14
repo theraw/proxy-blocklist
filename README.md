@@ -1,5 +1,5 @@
 # proxy-blocklist
-Pre-ban public proxies used for L7 attacking or other spam/attacks with nginx, iptables or route.
+Pre-ban public proxies used for L7 attacking or other spam/attacks. Ban list prebuild available for nginx, iptables or route.
 
 
 # Nginx
