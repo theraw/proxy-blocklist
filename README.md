@@ -20,3 +20,12 @@ Route bans most times will get flushed automatically when you reboot your server
 curl -s https://raw.githubusercontent.com/theraw/proxy-blocklist/main/route_ban.sh |  bash -s
 ```
 
+
+# How to refresh proxies yourself?
+```
+cd /tmp; git clone https://github.com/theraw/proxy-blocklist.git
+cd /tmp/proxy-blocklist/grabber/; bash grab.sh
+# ^^ this will pull all public proxy ips now to build the format you want nginx, iptables or route use build.sh
+cd /tmp/proxy-blocklist/grabber/; bash build.sh
+# ^^ this will ask what list would you like to build so you'll have to write one list will be created/updated on folder /tmp/proxy-blocklist/
+```
