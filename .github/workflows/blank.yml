@@ -22,7 +22,6 @@ jobs:
           date > generated.txt
           git config user.name BobTheBuilder
           git config user.email raw@dopehosting.net
-          git remote set-url origin https://x-access-token:${{ secrets.G_TOKEN }}@github.com/${{ github.repository }}
           git add .
           git commit -m "ip list refresh"
-          git push
+          git push https://${{ secrets.G_USER }}:${{ secrets.G_PASSWORD }}@hgithub.com/${{ github.repository }} --all
