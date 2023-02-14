@@ -1,6 +1,6 @@
 #!/bin/bash
 input_file="valid.txt"
-echo "Enter response (nginx, iptables or route):"
+echo "Enter response (nginx, nginx-map, iptables or route):"
 read response
 
 # Switch case based on response
@@ -25,10 +25,20 @@ case "$response" in
     do
       echo "route add blackhole $line" >> ../route_ban.sh
     done < "$input_file"
+    ;;
+  "nginx-map")
+    rm -Rf ../nginx_blacklist_map.conf
+    echo 'geo $bad_ip {' > ../nginx_blacklist_map.conf
 
+    while IFS= read -r line
+    do
+      echo "    $line;" >> ../nginx_blacklist_map.conf
+    done < "$input_file"
+
+    echo '    default 1;' >> ../nginx_blacklist_map.conf
+    echo '}' >> ../nginx_blacklist_map.conf
     ;;
   *)
-    # Invalid response
-    echo "Invalid response. Please enter nginx, iptables or route."
+    echo "Invalid response. Please enter nginx, nginx-map, iptables or route."
     ;;
 esac
