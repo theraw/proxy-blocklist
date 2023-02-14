@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          repo-token: ${{ secrets.G_TOKEN }}
+      - name: refresh lists
       - run: |
           git clone https://github.com/theraw/proxy-blocklist.git
           cd proxy-blocklist/grabber
