@@ -97,12 +97,12 @@ urls=(
 "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt"
 "https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks5.txt"
 "http://www.socks24.org/feeds/posts/default"
-#
 )
 rm -Rf fulllist.txt
 clear
 for url in "${urls[@]}"; do
   curl -s "$url" | grep -E '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | awk -F: '{print $1}' >> fulllist.txt
 done
-total=(`wc -l fulllist.txt`)
-echo "TOTAL PROXIES: $total"
+bash unique.sh
+total=(`wc -l unique_list.txt`)
+echo "TOTAL UNIQUE PROXIES: $total"
