@@ -9,12 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: refresh lists
       - uses: actions/checkout@v3
         with:
           repo-token: ${{ secrets.G_TOKEN }}
       - name: refresh lists
-      - run: |
+        run: |
           git clone https://github.com/theraw/proxy-blocklist.git
           cd proxy-blocklist/grabber
           bash grab.sh
