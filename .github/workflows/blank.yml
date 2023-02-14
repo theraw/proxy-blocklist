@@ -20,8 +20,9 @@ jobs:
           whoami
       - run: |
           date > generated.txt
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name BobTheBuilder
+          git config user.email raw@dopehosting.net
+          git remote set-url origin https://x-access-token:${{ secrets.G_TOKEN }}@github.com/${{ github.repository }}
           git add .
           git commit -m "ip list refresh"
           git push
