@@ -23,7 +23,7 @@ case "$response" in
     rm -Rf ../route_ban.sh
     while IFS= read -r line
     do
-      echo "route add blackhole $line" >> ../route_ban.sh
+      echo "ip route add blackhole $line" >> ../route_ban.sh
     done < "$input_file"
     ;;
   "nginx-map")
