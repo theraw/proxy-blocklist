@@ -1,8 +1,5 @@
 #!/bin/bash
-
-# URLs array
 urls=(
-# http
 "https://api.proxyscrape.com/?request=displayproxies&proxytype=http"
 "https://www.proxy-list.download/api/v1/get?type=http"
 "https://www.proxyscan.io/download?type=http"
@@ -22,8 +19,6 @@ urls=(
 "https://raw.githubusercontent.com/UserR3X/proxy-list/main/online/https.txt"
 "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http"
 "https://openproxylist.xyz/http.txt"
-"https://proxyspace.pro/http.txt"
-"https://proxyspace.pro/https.txt"
 "https://raw.githubusercontent.com/almroot/proxylist/master/list.txt"
 "https://raw.githubusercontent.com/aslisk/proxyhttps/main/https.txt"
 "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/HTTP.txt"
@@ -47,7 +42,6 @@ urls=(
 #sock4
 "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4"
 "https://openproxylist.xyz/socks4.txt"
-"https://proxyspace.pro/socks4.txt"
 "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS4.txt"
 "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks4.txt"
 "https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks4.txt"
@@ -61,7 +55,6 @@ urls=(
 "https://www.proxyscan.io/download?type=socks4"
 "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks4&country=all"
 "https://api.openproxylist.xyz/socks4.txt"
-#
 #sock5
 "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all&simplified=true"
 "https://www.proxy-list.download/api/v1/get?type=socks5"
@@ -74,7 +67,6 @@ urls=(
 "https://www.freeproxychecker.com/result/socks5_proxies.txt"
 "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5"
 "https://openproxylist.xyz/socks5.txt"
-"https://proxyspace.pro/socks5.txt"
 "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS5.txt"
 "https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt"
 "https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks5.txt"
@@ -82,11 +74,10 @@ urls=(
 "https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks5.txt"
 "https://spys.me/socks.txt"
 "http://www.socks24.org/feeds/posts/default"
-#
 )
+rm -Rf fulllist.txt
+clear
 for url in "${urls[@]}"; do
-  rm -Rf fulllist.txt
-  clear
   curl -s "$url" | grep -E '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | awk -F: '{print $1}' >> fulllist.txt
 done
 total=(`wc -l fulllist.txt`)
