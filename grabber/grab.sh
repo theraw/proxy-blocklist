@@ -104,5 +104,6 @@ for url in "${urls[@]}"; do
   curl -s "$url" | grep -E '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | awk -F: '{print $1}' >> fulllist.txt
 done
 bash unique.sh
-total=(`wc -l unique_list.txt`)
+bash validate.sh
+total=(`wc -l valid.txt`)
 echo "TOTAL UNIQUE PROXIES: $total"

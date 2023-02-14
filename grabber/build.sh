@@ -1,5 +1,5 @@
 #!/bin/bash
-input_file="unique_list.txt"
+input_file="valid.txt"
 echo "Enter response (nginx, iptables or route):"
 read response
 
