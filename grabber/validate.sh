@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf valid.txt
 # Define a pattern for a valid IP address
 pattern="^([0-9]{1,3}\.){3}[0-9]{1,3}$"
 
