@@ -1,11 +1,7 @@
+#!/bin/bash
+
 input="fulllist.txt"
 output="unique_list.txt"
 
-declare -A seen
-while read -r line; do
-    if [ -z "${seen[$line]}" ]; then
-        echo "$line" >> "$output"
-        seen[$line]=1
-    fi
-done < "$input"
-rm -Rf fulllist.txt
+awk '{$1=$1};1' "$input" | grep -v -e '^0\.0\.0\.0$' -e '^127\.0\.0\.1$' | sort | uniq > "$output"
+rm -Rf "$input"
