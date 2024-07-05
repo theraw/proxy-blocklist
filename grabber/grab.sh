@@ -100,3 +100,4 @@ echo -e "Validating IPs"; bash validate.sh
 
 total=$(wc -l < valid.txt)
 echo -e "TOTAL UNIQUE PROXIES: $total"
+echo -e "IP LIST FILE: valid.txt"
