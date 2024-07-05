@@ -2,12 +2,10 @@
 urls=(
 "https://api.proxyscrape.com/?request=displayproxies&proxytype=http"
 "https://www.proxy-list.download/api/v1/get?type=http"
-"https://www.proxyscan.io/download?type=http"
 "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt"
 "https://api.openproxylist.xyz/http.txt"
 "https://raw.githubusercontent.com/shiftytr/proxy-list/master/proxy.txt"
-"http://alexa.lr2b.com/proxylist.txt"
-"https://www.freeproxychecker.com/result/http_proxies.txt"
+"https://alexa.lr2b.com/proxylist.txt"
 "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-http.txt"
 "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt"
 "https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/proxies.txt"
@@ -15,8 +13,6 @@ urls=(
 "https://proxy-spider.com/api/proxies.example.txt"
 "https://multiproxy.org/txt_all/proxy.txt"
 "https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt"
-"https://raw.githubusercontent.com/UserR3X/proxy-list/main/online/http.txt"
-"https://raw.githubusercontent.com/UserR3X/proxy-list/main/online/https.txt"
 "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http"
 "https://openproxylist.xyz/http.txt"
 "https://raw.githubusercontent.com/almroot/proxylist/master/list.txt"
@@ -24,30 +20,20 @@ urls=(
 "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/HTTP.txt"
 "https://raw.githubusercontent.com/hendrikbgr/Free-Proxy-Repo/master/proxy_list.txt"
 "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-https.txt"
-"https://raw.githubusercontent.com/mertguvencli/http-proxy-list/main/proxy-list/data.txt"
 "https://raw.githubusercontent.com/mmpx12/proxy-list/master/http.txt"
 "https://raw.githubusercontent.com/mmpx12/proxy-list/master/https.txt"
 "https://raw.githubusercontent.com/proxy4parsing/proxy-list/main/http.txt"
-"https://raw.githubusercontent.com/RX4096/proxy-list/main/online/http.txt"
-"https://raw.githubusercontent.com/RX4096/proxy-list/main/online/https.txt"
-"https://raw.githubusercontent.com/saisuiu/uiu/main/free.txt"
-"https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/http.txt"
 "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/http.txt"
 "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/https.txt"
-"https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt"
 "https://rootjazz.com/proxies/proxies.txt"
-"https://sheesh.rip/http.txt"
-"https://spys.me/proxy.txt"
 "https://www.proxy-list.download/api/v1/get?type=https"
 "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all"
-"https://github.com/jetkai/proxy-list/blob/main/archive/txt/proxies-http.txt"
-"https://github.com/jetkai/proxy-list/blob/main/archive/txt/proxies-https.txt"
-"https://github.com/jetkai/proxy-list/blob/main/online-proxies/txt/proxies-http.txt"
-"https://github.com/jetkai/proxy-list/blob/main/online-proxies/txt/proxies-https.txt"
-"https://proxylist.geonode.com/api/proxy-list?limit=500&page=1&sort_by=lastChecked&sort_type=desc&protocols=http%2Chttps"
-"https://proxylist.geonode.com/api/proxy-list?limit=500&page=2&sort_by=lastChecked&sort_type=desc&protocols=http%2Chttps"
-"https://proxylist.geonode.com/api/proxy-list?limit=500&page=3&sort_by=lastChecked&sort_type=desc&protocols=http%2Chttps"
-"https://raw.githubusercontent.com/Fl3t/NitroGenerator/master/discord/proxys.txt"
+"https://raw.githubusercontent.com/jetkai/proxy-list/main/archive/txt/proxies-http.txt"
+"https://raw.githubusercontent.com/jetkai/proxy-list/main/archive/txt/proxies-https.txt"
+"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-http.txt"
+"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-https.txt"
+"https://api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all"
+"https://api.proxyscrape.com/?request=displayproxies&proxytype=https&country=all"
 "https://raw.githubusercontent.com/Go0p/emmmm/master/data/Proxy_pool/proxy_pool.txt"
 "https://raw.githubusercontent.com/MITSUKI-IID/IG-FREE/main/Data/proxy2.txt"
 "https://raw.githubusercontent.com/Nem4/viewerbot/master/Proxies_txt/good_proxy.txt"
@@ -67,17 +53,14 @@ urls=(
 "https://openproxylist.xyz/socks4.txt"
 "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS4.txt"
 "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks4.txt"
-"https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks4.txt"
 "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4_RAW.txt"
-"https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks4.txt"
 "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks4.txt"
 "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt"
-"https://spys.me/socks.txt"
-"https://www.freeproxychecker.com/result/socks4_proxies.txt"
 "https://www.proxy-list.download/api/v1/get?type=socks4"
-"https://www.proxyscan.io/download?type=socks4"
 "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks4&country=all"
+"https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&country=all"
 "https://api.openproxylist.xyz/socks4.txt"
+"https://api.openproxylist.xyz/socks5.txt"
 #
 #sock5
 "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all&simplified=true"
@@ -90,20 +73,30 @@ urls=(
 "https://api.openproxylist.xyz/socks5.txt"
 "https://www.freeproxychecker.com/result/socks5_proxies.txt"
 "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5"
-"https://openproxylist.xyz/socks5.txt"
 "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS5.txt"
 "https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt"
 "https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks5.txt"
 "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt"
 "https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks5.txt"
-"http://www.socks24.org/feeds/posts/default"
 )
 rm -Rf fulllist.txt
 clear
+
+total_urls=${#urls[@]}
+processed=0
+
+echo "Starting to fetch proxies from $total_urls sources."
+echo -n "Processed $processed/$total_urls"
+
 for url in "${urls[@]}"; do
   curl -s "$url" | grep -E '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | awk -F: '{print $1}' >> fulllist.txt
+  processed=$((processed + 1))
+  echo -ne "\rProcessed $processed/$total_urls"
 done
-bash unique.sh
-bash validate.sh
-total=(`wc -l valid.txt`)
-echo "TOTAL UNIQUE PROXIES: $total"
+
+echo -ne "\rProcessed $total_urls/$total_urls"
+echo -e "\nFiltering Duplicates"; bash unique.sh
+echo -e "Validating IPs"; bash validate.sh
+
+total=$(wc -l < valid.txt)
+echo -e "TOTAL UNIQUE PROXIES: $total"
